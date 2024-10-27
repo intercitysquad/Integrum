@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-{% load staticfiles %}
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}main.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
     <title>Title</title>
 </head>
 <body>
@@ -77,7 +77,7 @@
  </div>
 </div>
 </body>
-<script type="text/javascript" src='js/main.js'></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{% static 'main.js'}"></script>
+<script type="text/javascript" src="{% static 'jquery.min.js'}"></script>
+<script type="text/javascript" src="{% static 'bootstrap.min.js'}"></script>
 </html>
